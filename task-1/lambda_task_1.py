@@ -1,15 +1,18 @@
 import zipfile
+import boto3
 
 class lambda_handler:
     def __init__(self, handler_name):
         self.handler_name = handler_name
+        self.client = boto3.client("lambda")
         self.response = None
     
     def create_zip_file(self):
-        print("Task 1: Creating ")
+        print("Task 1: Creating ZIP file...")
         zipfile.ZipFile("lambda_function.zip", mode="w").write("lambda_function.py")
 
     def create_lambda(self):
+        self.create_zip_file()
         print("Task 1: Creating Lambda function...")
         self.response = self.client.create_function(
             FunctionName = self.handler_name,
