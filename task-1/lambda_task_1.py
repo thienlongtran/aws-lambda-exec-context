@@ -20,7 +20,6 @@ class lambda_handler:
             Role = "arn:aws:iam::768907305587:role/robomaker_students",
             Handler = "lambda_function.lambda_handler",
             Description = "TODO",
-            Timeout = 600,
             Code =  {
                         "ZipFile": open("lambda_function.zip", "rb").read()
                     }
@@ -37,7 +36,7 @@ class lambda_handler:
 #Create Function for Debugging
 if __name__ == "__main__":
     import time
-    newlambda = lambda_handler("TEST_task_1")
+    newlambda = lambda_handler("task_1_test")
     newlambda.create_lambda()
-    time.sleep(10)
+    input("Press enter key to delete lambda function...")
     newlambda.delete_lambda()

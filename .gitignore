@@ -128,5 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#Function ZIP Files
+#Project Specific Files
 lambda_function.zip
+response.json
