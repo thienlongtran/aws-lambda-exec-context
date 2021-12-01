@@ -24,7 +24,6 @@ class lambda_handler:
             Role = "arn:aws:iam::768907305587:role/robomaker_students",
             Handler = "lambda_function.lambda_handler",
             Description = "TODO",
-            Timeout = 1,
             Code =  {
                         "ZipFile": open("lambda_function.zip", "rb").read()
                     }
