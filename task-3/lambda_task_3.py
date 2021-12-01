@@ -9,12 +9,12 @@ class lambda_handler:
         self.execution_duration = execution_duration
     
     def create_zip_file(self):
-        print("Task 3: Creating ZIP file...")
+        print("Task 3 - Function {}: Creating ZIP file...".format(str(self.execution_duration)))
         zipfile.ZipFile("lambda_function.zip", mode="w").write("lambda_function.py")
 
     def create_lambda(self):
         self.create_zip_file()
-        print("Task 3: Creating Lambda function...")
+        print("Task 3 - Function {}: Creating Lambda function...".format(str(self.execution_duration)))
         self.response = self.client.create_function(
             FunctionName = self.handler_name,
             Runtime = "python3.9",
@@ -34,7 +34,7 @@ class lambda_handler:
         return self.response
     
     def delete_lambda(self):
-        print("Task 3: Deleting Lambda function...")
+        print("Task 3 - Function {}: Deleting Lambda function...".format(str(self.execution_duration)))
         self.response = self.client.delete_function(
             FunctionName = self.handler_name
         )
