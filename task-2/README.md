@@ -7,5 +7,8 @@ The second task is to find out the time it takes for your Task-1 code to run dur
 
 ## Deliverables
 1. Describe the process you used for setting up cold and warm starts. Please include any code /commands you used for this.
+    - I manually redeployed the function handler code in the AWS Console each time I want a cold start which forces the Lambda function to use a new execution context, thus forcing a cold start. I then invoked the Lambda fuction twice (one for cold start data and one for warm start) and repeated this process for a total of ten times to acquire 10 cold and warm start points of data.
 2. Show the raw results of response time for all the cold starts and warm starts and their mean and median values.
+    - Pure results are in the `results.xlsx` file. Below is a preview of the data.
+    ![Data Preview](results.png)
 3. Draw a box plot graph depicting the cold and warm start response times. You may use Excel / Matplotlib or any other suitable tool for this. Please submit additional code (if any) for this. 
