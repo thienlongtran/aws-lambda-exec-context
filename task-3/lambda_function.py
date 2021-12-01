@@ -22,7 +22,7 @@ def lambda_handler(event, context):
     #Print Argument and IP Address
     print("String Argument: " + str(event))
     print("IP Address: " + ip_address)
-    print("Execution DurationL " + str(os.environ.get("EXECUTION_DURATION")))
+    print("Execution Duration: " + str(os.environ.get("EXECUTION_DURATION")))
 
     elapsed_time = None
     execution_context = None
@@ -31,6 +31,7 @@ def lambda_handler(event, context):
     else:
         elapsed_time, execution_context = enter_warm_context(request_time)
     
+    time.sleep(int(os.environ.get("EXECUTION_DURATION")))
     return {
         "statusCode": 200,
         "lambda_ip_address": ip_address,
