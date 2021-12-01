@@ -1,3 +1,4 @@
+import os
 import socket
 import time
 
@@ -21,6 +22,7 @@ def lambda_handler(event, context):
     #Print Argument and IP Address
     print("String Argument: " + str(event))
     print("IP Address: " + ip_address)
+    print("Execution DurationL " + str(os.environ.get("EXECUTION_DURATION")))
 
     elapsed_time = None
     execution_context = None
