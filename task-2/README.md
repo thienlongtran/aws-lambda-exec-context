@@ -15,3 +15,16 @@ The second task is to find out the time it takes for your Task-1 code to run dur
 
 3. Draw a box plot graph depicting the cold and warm start response times. You may use Excel / Matplotlib or any other suitable tool for this. Please submit additional code (if any) for this.
 <p align="center"><img src="results_box.png" width="450" height="257"></p>
+
+## Guide
+#### Infrastructure
+Creates a default Lambda function for quick testing and deletes once user is done.
+```
+python3 lambda_task_2.py
+```
+
+#### Lambda Invocation
+Invokes the created Lambda function with a default message and appends response to response.txt.
+```
+./invoke.sh
+```
