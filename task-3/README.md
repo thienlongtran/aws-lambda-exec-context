@@ -18,3 +18,16 @@ Your task is to find out the relationship between “function execution” durat
 3. Your report should also include all the IP addresses used by AWS for deployment during each of the invocations in your reports.
 
     ### [Report Link](report.pdf)
+
+## Guide
+#### Infrastructure
+Creates three default Lambda function with a execution delay of 1, 2, and 3 seconds, and deletes once user is done.
+```
+python3 lambda_task_3.py
+```
+
+#### Lambda Invocation
+Invokes each of the Lambda functions in batches 10 times with a one-second delay inbetween batches. Appends responses to responses.txt.
+```
+./invoke.sh
+```
