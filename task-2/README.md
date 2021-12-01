@@ -12,3 +12,4 @@ The second task is to find out the time it takes for your Task-1 code to run dur
     - Pure results are in the `results.xlsx` file. Below is a preview of the data.
     ![Data Preview](results.png)
 3. Draw a box plot graph depicting the cold and warm start response times. You may use Excel / Matplotlib or any other suitable tool for this. Please submit additional code (if any) for this. 
+    ![Box Plot](results_box.png)
