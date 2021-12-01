@@ -13,3 +13,30 @@ The final task is to attempt to infer how long AWS Lambda keeps a cold-started e
 the submission.
 
     ### [Report Link](report.pdf)
+
+## Guide
+Note that each shell script, by default, uses **180 as the default number of Lambda functions**. This number may have to be changed for a variety of reasons, including if your AWS account does not have an appropriate unreserved Lambda concurrency amount to spare to each function instance. In that case, you may need to modify the shell scripts to use a lower number.
+
+#### Create
+Creates 180 Lambda functions.
+```
+./function_create.sh
+```
+
+#### Cold Start
+Cold starts Lambda function environments. Use immediately after creating functions.
+```
+./function_cold_start.sh
+```
+
+#### Sequential Invocations
+Sequentially invoke Lambda functions minute-by-minute function-after-function. Use after cold starting functions.
+```
+./function_invoke_sequential.sh
+```
+
+#### Destroy
+Destroys all 180 Lambda functions.
+```
+./function_destroy.sh
+```
