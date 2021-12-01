@@ -21,7 +21,7 @@ class lambda_handler:
             Role = "arn:aws:iam::768907305587:role/robomaker_students",
             Handler = "lambda_function.lambda_handler",
             Description = "TODO",
-            Timeout = 60,
+            Timeout = 5,
             Environment={
                 "Variables": {
                     "EXECUTION_DURATION": str(self.execution_duration)
