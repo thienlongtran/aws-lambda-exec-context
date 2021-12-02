@@ -21,7 +21,7 @@ class lambda_handler:
             Role = "arn:aws:iam::768907305587:role/robomaker_students",
             Handler = "lambda_function.lambda_handler",
             Description = "TODO",
-            Timeout = 5,
+            Timeout = 600,
             Environment={
                 "Variables": {
                     "EXECUTION_DURATION": str(self.execution_duration)
@@ -43,13 +43,19 @@ class lambda_handler:
 #Create Function for Debugging
 if __name__ == "__main__":
     import time
+    zero_second_lambda = lambda_handler("task_3_test", 0)
+    zero_second_lambda.create_lambda()
     one_second_lambda = lambda_handler("task_3_test", 1)
     one_second_lambda.create_lambda()
     two_second_lambda = lambda_handler("task_3_test", 2)
     two_second_lambda.create_lambda()
     three_second_lambda = lambda_handler("task_3_test", 3)
     three_second_lambda.create_lambda()
+    ten_second_lambda = lambda_handler("task_3_test", 10)
+    ten_second_lambda.create_lambda()
     input("Press enter key to delete lambda function...")
+    zero_second_lambda.delete_lambda()
     one_second_lambda.delete_lambda()
     two_second_lambda.delete_lambda()
     three_second_lambda.delete_lambda()
+    ten_second_lambda.delete_lambda()

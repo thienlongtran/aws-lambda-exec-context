@@ -1,0 +1,10 @@
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 0.00865793228149414, "execution_context": "Cold Started"}
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 7.43865966796875e-05, "execution_context": "Warm Started"}
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 0.00010991096496582031, "execution_context": "Warm Started"}
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 7.224082946777344e-05, "execution_context": "Warm Started"}
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 7.534027099609375e-05, "execution_context": "Warm Started"}
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 7.343292236328125e-05, "execution_context": "Warm Started"}
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 7.486343383789062e-05, "execution_context": "Warm Started"}
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 7.581710815429688e-05, "execution_context": "Warm Started"}
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 7.128715515136719e-05, "execution_context": "Warm Started"}
+{"statusCode": 200, "lambda_ip_address": "169.254.100.17", "elapsed_time": 7.152557373046875e-05, "execution_context": "Warm Started"}
