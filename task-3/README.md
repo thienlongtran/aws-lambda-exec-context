@@ -21,7 +21,7 @@ Your task is to find out the relationship between “function execution” durat
 
 ## Guide
 #### Infrastructure
-Creates three default Lambda function with a execution delay of 1, 2, and 3 seconds, and deletes once user is done.
+Creates five default Lambda functions with a execution delay of 0, 1, 2, 3, and 10 seconds, and deletes functions once user is done.
 ```
 python3 lambda_task_3.py
 ```
